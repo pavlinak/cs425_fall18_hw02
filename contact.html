@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>John Doe Photography House - Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="CS425, Internet Technologies, Fall2018, HW2, HTML, Contact">
+    <meta name="author" content="Pavlina Kyriacou">
+    <meta name="description" content="This is the contact page of asignment 2 for CS425, Internet Technologies">
+    <link rel="shortcut icon" href="favicon/favicon"/>
+    <link rel="stylesheet" href="https://fonts.google.com/?selection.family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>John Doe Photography House</h1>
+    </header> 
+    <nav id="navbar" class="topnav">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="#" id="icon" class="fa fa-bars" onclick="myFunction()"></a></li>
+        </ul>
+    </nav> 
+
+
+    <div class="container">
+
+        <h3>Information About Us</h3>
+        <h4>Address:</h4>
+        <h5>31 Hollow Street, Midborg</h5>
+        <h5>1956, Reykjavik, Iceland</h5>
+        <h4>Telephone Number:</h4>
+        <h5>00 354 5600354</h5>
+        <h4>Open Hours:</h4>
+        <h5>Monday - Saturday: 10:00 - 20:00</h5>
+
+        <p><br><br></p>
+
+        <h3>Contact Us</h3>
+        <form action="/action_page.php">
+            <label for="name">First Name:</label><br>
+            <input type="text" id="name" name="first_name" placeholder="Type name..." required><br>
+            <label for="surname">Last Name:</label><br>
+            <input type="text" id="surname" name="last_name" placeholder="Type last name..." required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email_address" placeholder="Type email address..." required><br>
+            <label for="subject">Message Subject:</label><br>
+            <input type="text" id="subject" name="message_subject" placeholder="Message Subject..." required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" placeholder="Tell us what you want..." required></textarea><br>
+            <label for="meeting">Meeting:</label><br>
+            <input type="date" name="meeting">
+            <input type="time" name="meet-time" max="20:00"><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+    <footer>
+        <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="#top_of_page" class="button">Top</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,287 @@
+body {
+    background-image: url("photograph1.jpg");
+    background-color: rgb(102, 145, 211); /* Used if the image is not available */
+    background-repeat: no-repeat;
+    position: relative;
+    font-size: 20px;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Comic Sans';
+    align-content: center;
+}
+h1 {
+    color: rgb(247, 247, 247);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+}
+h3 {
+    color: rgb(51, 51, 51);
+    font-family: 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    float: center;
+}
+footer{
+    padding-top: 15px;
+}
+nav{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    float: center;
+    position: relative;
+}
+.topnav {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* Add a black background color to the top navigation */
+    background-color: rgba(0, 0, 0, 0.671);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    border-radius: 5px;
+    top: 0;
+}
+/* Style the links inside the navigation bar */
+.topnav li a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Change the color of navigation links on hover */
+.topnav li a:hover:not(.active) {
+    background-color: rgb(9, 3, 94);
+}
+/* Add an active class to highlight the current page */
+.active {
+    background-color: rgba(20, 94, 255, 0.774);
+}
+/* Responsive Navigation Bar */
+.topnav #icon {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .topnav li a:not(.active) {display: none;}
+    .topnav li a#icon {
+        float: right;
+        display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive li #icon {
+        display: 
+    }
+    .topnav.responsive li a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+/* Avatar Icons for Costumers' Reviews */
+.avatar {
+    vertical-align: middle;
+    width: 35%;
+    height: auto;
+}
+
+.row,.gallery_pictures{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+.gallery {
+    float: left;
+    padding: 5px;
+    width: 33.3333%;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+#part3{
+    text-align: center;
+}
+
+/* Create four equal columns that floats next to each other for Home Page */
+
+.column1 {
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+/* Responsive Bio Photo */
+.photographer{
+    padding-top: 25%;
+    width: 100%;
+    height: auto;
+}
+/* Create two equal columns that floats next to each other for About Us Page */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    text-align: justify;
+}
+/* Clear floats after the columns */
+.row:after, .row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Responsive layout - makes all the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, .column1 {
+        width: 100%;
+    }
+}
+/* Back - to - Top Button */
+.button {
+    text-decoration: none;
+    font-family: "Montserrat";
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    z-index: 99;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background-color: rgb(20, 94, 255);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+/* Change the color of links on hover */
+.button:hover {
+    background-color: rgb(9, 3, 94);
+}
+.fa {
+    bottom: 10px;
+    padding: 15px;
+    font-size: 15px;
+    width: 45px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}  
+.fa:hover {
+    opacity: 0.5;
+}
+.fa-facebook {
+    background: rgb(44, 79, 153);
+    color: white;
+    left: 100px;
+}
+.fa-twitter {
+    background: rgb(116, 192, 250);
+    color: white;
+    left: 200px;
+}
+.fa-instagram {
+    background: #cf5bec;
+    color: white;
+    left: 300px;
+}
+/* These are for Contact Us Webpage */
+* {
+    box-sizing: border-box;
+}
+/* Style inputs */
+input[type=text], select, textarea {
+    border-radius: 15px 50px;
+    width: 65%;
+    padding: 12px;
+    border: 1px solid rgb(235, 230, 253);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=date]{
+    border-radius: 15px 50px;
+    padding: 12px;
+    border: 1px solid rgb(235, 230, 253);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=time]{
+    border-radius: 15px 50px;
+    padding: 12px;
+    border: 1px solid rgb(235, 230, 253);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=email]{
+    border-radius: 15px 50px;
+    width: 65%;
+    padding: 12px;
+    border: 1px solid rgb(235, 230, 253);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color:  rgb(20, 94, 255);
+    border-radius: 2px 8px;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+input[type=reset] {
+    background-color:  rgb(20, 94, 255);
+    border-radius: 2px 8px;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+input[type=reset]:hover {
+    background-color: rgb(9, 3, 94);
+}
+input[type=submit]:hover {
+    background-color: rgb(9, 3, 94);
+}
+label{
+    font-size: 18px;
+}
+textarea{
+    height: 170px;
+}
+/* Style the container/contact section */
+.container, .row {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    width: 70%;
+    background-color: #dadde4;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+} 
