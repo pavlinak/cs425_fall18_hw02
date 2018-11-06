@@ -67,11 +67,10 @@ ul {
     background-color: rgba(20, 94, 255, 0.774);
 }
 
-.topnav #icon {
+/*.topnav #icon {
     display: none;
 }
 @media screen and (max-width: 600px) {
-    .topnav li a:not(.active) {display: none;}
     .topnav li a#icon {
         float: right;
         display: block;
@@ -87,7 +86,7 @@ ul {
         display: block;
         text-align: left;
     }
-}
+}*/
 
 .avatar {
     vertical-align: middle;
