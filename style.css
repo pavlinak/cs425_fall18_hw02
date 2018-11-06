@@ -1,6 +1,6 @@
 body {
     background-image: url("photograph1.jpg");
-    background-color: rgb(102, 145, 211); /* Used if the image is not available */
+    background-color: rgb(102, 145, 211); /* Use this background colour if the image is not available */
     background-repeat: no-repeat;
     position: relative;
     font-size: 20px;
@@ -34,7 +34,7 @@ nav{
     position: relative;
 }
 .topnav {
-    position: sticky;
+    position: sticky; /*The sticky tag that makes the top navigation bar stay in place*/
     top: 0;
     overflow: hidden;
 
@@ -44,14 +44,13 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /* Add a black background color to the top navigation */
     background-color: rgba(0, 0, 0, 0.671);
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky; /*Make the navigation bar sticky for Safari */
     position: sticky;
     border-radius: 5px;
     top: 0;
 }
-/* Style the links inside the navigation bar */
+
 .topnav li a {
     float: left;
     display: block;
@@ -63,11 +62,11 @@ ul {
 .topnav li a:hover:not(.active) {
     background-color: rgb(9, 3, 94);
 }
-/* Add an active class to highlight the current page */
+
 .active {
     background-color: rgba(20, 94, 255, 0.774);
 }
-/* Responsive Navigation Bar */
+
 .topnav #icon {
     display: none;
 }
@@ -89,7 +88,7 @@ ul {
         text-align: left;
     }
 }
-/* Avatar Icons for Costumers' Reviews */
+
 .avatar {
     vertical-align: middle;
     width: 35%;
@@ -125,39 +124,37 @@ div.desc {
     text-align: center;
 }
 
-/* Create four equal columns that floats next to each other for Home Page */
-
 .column1 {
     float: left;
     width: 25%;
     padding: 5px;
 }
-/* Responsive Bio Photo */
+
 .photographer{
     padding-top: 25%;
     width: 100%;
     height: auto;
 }
-/* Create two equal columns that floats next to each other for About Us Page */
+
 .column {
     float: left;
     width: 50%;
     padding: 10px;
     text-align: justify;
 }
-/* Clear floats after the columns */
+
 .row:after, .row::after {
     content: "";
     display: table;
     clear: both;
 }
-/* Responsive layout - makes all the columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 600px) {
     .column, .column1 {
         width: 100%;
     }
 }
-/* Back - to - Top Button */
+
 .button {
     text-decoration: none;
     font-family: "Montserrat";
@@ -175,7 +172,7 @@ div.desc {
     padding: 15px;
     border-radius: 4px;
 }
-/* Change the color of links on hover */
+
 .button:hover {
     background-color: rgb(9, 3, 94);
 }
@@ -207,11 +204,10 @@ div.desc {
     color: white;
     left: 300px;
 }
-/* These are for Contact Us Webpage */
 * {
     box-sizing: border-box;
 }
-/* Style inputs */
+
 input[type=text], select, textarea {
     border-radius: 15px 50px;
     width: 65%;
@@ -274,7 +270,7 @@ label{
 textarea{
     height: 170px;
 }
-/* Style the container/contact section */
+
 .container, .row {
     margin-left: auto;
     margin-right: auto;
